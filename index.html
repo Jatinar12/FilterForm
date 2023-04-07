@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Data Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Form Details</h1>
+    <form id="userForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name:">
+
+      <label for="height">Height:</label>
+      <input type="number" id="height" name="height" required placeholder="Enter the height:">
+
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" name="weight" required placeholder="Enter the weight:">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required placeholder="Enter the age:">
+
+      <button type="submit">Submit</button>
+      
+    </form>
+
+   
+
+
+    <div class="filter-container">
+      <label for="filter">Filter by:</label>
+      <select id="filter">
+        <option value="name">Select Option</option>
+        <option value="height">Height</option>
+        <option value="weight">Weight</option>
+        <option value="age">Age</option>
+      </select>
+    </div>
+
+    <table id="userData"></table>
+
+    <script src="filter.js"></script>
+  </body>
+</html>
